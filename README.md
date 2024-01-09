@@ -1,2 +1,2 @@
-# watshi wa [Waseeen](https://https://github.com/waseeen/) desu
+# watshi wa [Waseeen](https://github.com/waseeen/) desu
 ### circle clicker enjoyer
