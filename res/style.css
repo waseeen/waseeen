@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  67% {
+    transform: translateX(0px);
+  }
+  84% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(3000%);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  67% {
+    transform: translateY(0px);
+  }
+  84% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+  overflow-x: hidden;
+}
+body {
+  background-color: #323437;
+}
+a {
+  color: #e2b714;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: #e2b714;
+}
+.invert {
+  filter: invert(100%);
+  width: 30px;
+  padding-right: 10px;
+}
+
+.linkus {
+  text-align: center;
+  padding: 0px;
+}
+.box {
+  border: 5px solid #d1d0c5;
+  border-radius: 60px;
+  margin-left: 20px;
+  margin-top: 30px;
+  font-size: 3rem;
+  min-width: 580px;
+  float: left;
+  transition: 0.2s all;
+}
+
+#hdr {
+  margin-top: 30px;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #e2b714;
+}
+
+@media screen and (min-width: 1219px) {
+  .box {
+    margin-left: calc((100% - 1160px) / 3);
+  }
+  .linkus {
+    animation: 1200ms ease-out 0s 1 slideInFromLeft;
+  }
+}
+
+@media screen and (max-width: 1218px) {
+  .box {
+    margin-left: calc((100% - 580px) / 2);
+  }
+}
+
+/*hover animation*/
+.linkus:hover .box {
+  filter: blur(3px);
+  opacity: 0.5;
+  transform: scale(0.98);
+  box-shadow: none;
+}
+.linkus:hover .box:hover {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+  background-color: #222222;
+}
+
+body {
+  animation: theme 21s linear infinite;
+  font-family: "Fira Code", monospace;
+}
+
+body:after,
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  width: 100vmax;
+  height: 100vmax;
+  background: rgba(0, 0, 0, 0.05);
+  animation: background 180s linear infinite;
+}
+
+body:after {
+  left: 15vw;
+}
+
+body:before {
+  right: 15vw;
+  animation-delay: -30s;
+  animation-direction: reverse;
+}
+
+@keyframes theme {
+  0% {
+    background: #323437;
+  }
+
+  100% {
+    background: #222222;
+  }
+}
+
+@keyframes background {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
