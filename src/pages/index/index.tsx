@@ -28,6 +28,7 @@ const IndexPage = () => {
             marginBottom: 'auto',
             borderRadius: '50%',
           }}
+          alt="waseeen pixel battle logo"
         />
       ),
     },

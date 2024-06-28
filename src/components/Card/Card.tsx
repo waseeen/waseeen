@@ -32,6 +32,7 @@ const Card = ({ title, href, index, source, icon }: CardProps) => {
             marginBottom: 'auto',
             borderRadius: '50%',
           }}
+          alt={`${title} logo`}
         />
       )}
       <Spacer />
