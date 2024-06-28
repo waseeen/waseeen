@@ -5,7 +5,9 @@ import classes from './card.module.css';
 import clsx from 'clsx';
 import GithubSVG from '../icons/Github';
 import { CardProps } from '../../types/card';
-const Card = ({ title, href, index, source, icon }: CardProps) => {
+import { useId } from 'react';
+const Card = ({ title, href, source, icon }: CardProps) => {
+  const index = useId();
   const [hovered, setHovered] = useAtom(hoveredBox);
   return (
     <Box
