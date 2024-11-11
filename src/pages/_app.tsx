@@ -1,15 +1,13 @@
-import { Container, Flex, Heading } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
 import { Outlet } from 'react-router-dom';
+import { themeState } from '../jotai';
+import { useAtomValue } from 'jotai';
 
 export default function Layout() {
+  const theme = useAtomValue(themeState);
   return (
-    <>
-      <Flex justify="center" sx={{ width: '100%', py: '20px' }}>
-        <Heading>Waseeen's field</Heading>
-      </Flex>
-      <Container maxW="container.xl" mt={4} p={4} bgColor="#2a2c34" borderRadius="10px">
-        <Outlet />
-      </Container>
-    </>
+    <ChakraProvider theme={theme}>
+      <Outlet />
+    </ChakraProvider>
   );
 }

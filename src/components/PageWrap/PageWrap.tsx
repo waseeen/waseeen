@@ -2,7 +2,7 @@ import { Heading } from '@chakra-ui/react';
 import { PageElement, PageElementType } from '../../types/element';
 import CardGroup from '../CardGroup/CardGroup';
 
-const CardPage = ({ elements }: { elements: PageElement[] }) => {
+const PageWrap = ({ elements }: { elements: PageElement[] }) => {
   return (
     <>
       {elements.map((element, i) => (
@@ -15,4 +15,4 @@ const CardPage = ({ elements }: { elements: PageElement[] }) => {
   );
 };
 
-export default CardPage;
+export default PageWrap;

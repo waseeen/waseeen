@@ -26,7 +26,7 @@ const Card = ({ title, href, source, icon }: CardProps) => {
         icon
       ) : (
         <img
-          src={`https://f1.allesedv.com/43/${href}`}
+          src={`https://f1.allesedv.com/43/${new URL(href).hostname}`}
           height={43}
           width={43}
           style={{
@@ -42,9 +42,15 @@ const Card = ({ title, href, source, icon }: CardProps) => {
       <Spacer />
       {source && (
         <>
-          <a href={source} target="_blank" className={classes.source__link}>
+          <div
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(source, '_blank');
+            }}
+            className={classes.source__link}
+          >
             <GithubSVG width={43} height={43} style={{ marginTop: 'auto', marginBottom: 'auto' }} />
-          </a>
+          </div>
         </>
       )}
     </Box>

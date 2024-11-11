@@ -16,13 +16,6 @@ const theme = extendTheme({
       },
     },
   },
-  styles: {
-    global: {
-      'html, body': {
-        background: 'brand.primary',
-      },
-    },
-  },
   initialColorMode: 'light',
   useSystemColorMode: false,
 });
