@@ -3,3 +3,45 @@ body {
   margin: 0;
   padding: 0;
 }
+
+img {
+  width: 43px;
+  height: 43px;
+}
+
+ul.wishlist {
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+  background-color: rgb(42, 44, 52);
+  border-radius: 10px;
+  width: max-content;
+}
+
+.wishlist li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.wishlist a {
+  text-decoration: none;
+  color: #1e6f8a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.wishlist a:hover {
+  color: #145a6e;
+  transform: translateY(-2px);
+}
+
+.wishlist a:active {
+  color: #3b3f40;
+}
+
+.wishlist li span {
+  font-size: 0.9rem;
+  color: #5b686a;
+}

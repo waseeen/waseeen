@@ -1,11 +1,9 @@
-import DiscordSVG from '../../components/icons/Discord';
-import GithubSVG from '../../components/icons/Github';
-import ShikimoriSVG from '../../components/icons/Shikimori';
-import { CardProps } from '../../types/card';
-import { PageElement, PageElementType } from '../../types/element';
-// import PageWrap from '../../components/PageWrap/PageWrap';
-// import { Flex, Heading, Container } from '@chakra-ui/react';
-import AppPage from '../../components/Page/Page';
+import DiscordSVG from '../components/icons/Discord';
+import GithubSVG from '../components/icons/Github';
+import ShikimoriSVG from '../components/icons/Shikimori';
+import { CardProps } from '../types/card';
+import { PageElement, PageElementType } from '../types/element';
+import AppPage from '../components/Page/Page';
 
 const IndexPage = () => {
   const things: CardProps[] = [
@@ -95,17 +93,7 @@ const IndexPage = () => {
       cards: links,
     },
   ];
-  return (
-    <>
-      <AppPage config={{ elements, title: "Waseeen's field" }} />
-      {/* <Flex justify="center" sx={{ width: '100%', py: '20px' }}>
-        <Heading>Waseeen's field</Heading>
-      </Flex>
-      <Container maxW="container.xl" mt={4} p={4} bgColor="#2a2c34" borderRadius="10px">
-        <PageWrap elements={elements} />
-      </Container> */}
-    </>
-  );
+  return <AppPage config={{ elements, title: "Waseeen's field" }} />;
 };
 
 export default IndexPage;
