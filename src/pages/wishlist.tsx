@@ -23,10 +23,10 @@ const WishlistPage = () => {
           title: 'Органайзер - 985р',
           href: 'https://www.wildberries.ru/catalog/233722873/detail.aspx?targetUrl=SN',
         },
-        {
-          title: 'Газлифт - 1 187р',
-          href: 'https://market.yandex.ru/cc/3nWRgUq',
-        },
+        // {
+        //   title: 'Газлифт - 1 187р',
+        //   href: 'https://market.yandex.ru/cc/3nWRgUq',
+        // },
         {
           title: 'Лейка - 954р',
           href: 'https://market.yandex.ru/cc/RrDKpk0',
@@ -44,14 +44,14 @@ const WishlistPage = () => {
           title: 'Коврик - 578р',
           href: 'https://market.yandex.ru/cc/6OXBGKt',
         },
-        {
-          title: 'Тачпад - 2 159р',
-          href: 'https://ozon.ru/t/yDNaL4G',
-        },
-        {
-          title: 'Подставка для пластинок - 2 256р',
-          href: 'https://ozon.ru/t/gbbkrJg',
-        },
+        // {
+        //   title: 'Тачпад - 2 159р',
+        //   href: 'https://ozon.ru/t/yDNaL4G',
+        // },
+        // {
+        //   title: 'Подставка для пластинок - 2 256р',
+        //   href: 'https://ozon.ru/t/gbbkrJg',
+        // },
         {
           title: 'Футболка - 1 552р',
           href: 'https://www.wildberries.ru/catalog/225262607/detail.aspx',
