@@ -4,8 +4,8 @@ import classes from './wishlist.module.css';
 const Wishlist = ({ links }: { links: LinkProps[] }) => {
   return (
     <ul className={classes.wishlist}>
-      {links.map((link) => (
-        <li>
+      {links.map((link, i) => (
+        <li key={i}>
           <a target="_blank" href={link.href}>
             {link.title}
           </a>

@@ -1,4 +1,5 @@
 import AppPage from '../components/Page/Page';
+import useTitle from '../hooks/useTitle';
 import { PageElement, PageElementType } from '../types/element';
 
 const WishlistPage = () => {
@@ -60,6 +61,7 @@ const WishlistPage = () => {
       ],
     },
   ];
+  useTitle('Вишлист васена');
   return <AppPage config={{ title: 'Вишлист васена', elements: config }} />;
 };
 
