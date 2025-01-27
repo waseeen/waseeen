@@ -8,6 +8,7 @@ export interface CardProps {
   source?: string;
   icon?: React.ReactNode;
   target?: HTMLAttributeAnchorTarget;
+  rel?: string;
 }
 
 export interface CardGroup {

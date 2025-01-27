@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import GithubSVG from '../icons/Github';
 import { CardProps } from '../../types/card';
 import { useId } from 'react';
-const Card = ({ title, href, source, icon, target }: CardProps) => {
+const Card = ({ title, href, source, icon, target, rel }: CardProps) => {
   const index = useId();
   const [hovered, setHovered] = useAtom(hoveredBox);
   return (
@@ -14,6 +14,7 @@ const Card = ({ title, href, source, icon, target }: CardProps) => {
       as="a"
       href={href}
       target={target || '_blank'}
+      rel={rel}
       className={clsx({
         [classes.card]: true,
         [classes.card__hovered]: hovered === index,
