@@ -1,0 +1,6 @@
+services:
+  waseeenru:
+    image: wasenru:latest
+    ports:
+      - '1432:4173'
+    container_name: waseeen-ru
