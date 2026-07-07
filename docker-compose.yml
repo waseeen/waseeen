@@ -4,3 +4,4 @@ services:
     ports:
       - '1432:80'
     container_name: waseeen-ru
+    restart: unless-stopped
